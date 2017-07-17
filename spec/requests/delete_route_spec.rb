@@ -1,6 +1,6 @@
 require 'rails_helper'
 
-describe "post a place route", :type => :request do
+describe "delete a place route", :type => :request do
 
   before do
     @place1 = FactoryGirl.create(:place)
