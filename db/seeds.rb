@@ -9,23 +9,20 @@
 Place.destroy_all
 
 
-class Seed
 
-  def self.begin
-    seed = Seed.new
-    seed.generate_places
-  end
-
-  def generate_places
-    20.times do |index|
-    Place.create!(
-        city: Faker::Address.city,
-        country: Faker::Address.country,
-        image_file_name: Faker::Avatar.image
-        )
-    end
+  20.times do |index|
+  new_place = Place.create!(city: Faker::Address.city,
+                            country: Faker::Address.country,
+                            image_file_name: Faker::Avatar.image
+                            )
+    5.times do
+      new_place.reviews.create!(author: Faker::Friends.character,
+                                content: Faker::Lorem.characters(100)
+                                )
   end
 end
 
-Seed.begin
+
+
 p "Created #{Place.count} places"
+p "Created #{Review.count} reviews"

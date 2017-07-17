@@ -25,10 +25,7 @@ class PlacesController < ApplicationController
   end
 
   private
-  def json_response(object, status = :ok)
-    render json: object, status: status
-  end
-
+  
   def place_params
     params.permit(:city, :country, :image)
   end
