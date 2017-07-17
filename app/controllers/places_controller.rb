@@ -3,6 +3,7 @@ class PlacesController < ApplicationController
     @places = Place.all
     city = params[:city]
     @places = Place.search_by_city(city)
+    # @places = Place.search_by_country(country)
     json_response(@places)
   end
 
