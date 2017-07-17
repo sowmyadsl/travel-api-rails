@@ -20,7 +20,8 @@ class Seed
     20.times do |index|
     Place.create!(
         city: Faker::Address.city,
-        country: Faker::Address.country
+        country: Faker::Address.country,
+        image_file_name: Faker::Avatar.image
         )
     end
   end

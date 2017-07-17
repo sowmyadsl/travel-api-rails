@@ -26,11 +26,11 @@ class PlacesController < ApplicationController
 
   private
   def json_response(object, status = :ok)
-    render json: object, status: :status
+    render json: object, status: status
   end
 
   def place_params
-    params.permit(:city, :country)
+    params.permit(:city, :country, :image)
   end
 
 end
