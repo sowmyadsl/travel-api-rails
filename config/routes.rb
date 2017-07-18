@@ -1,6 +1,6 @@
 Rails.application.routes.draw do
   devise_for :users
-   post 'auth_user' => 'authentication#authenticate_user'
+  #  post 'auth_user' => 'authentication#authenticate_user'
    get 'home' => 'v1/places#index'
 
   # use_doorkeeper
