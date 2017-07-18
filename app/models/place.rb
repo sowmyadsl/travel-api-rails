@@ -3,6 +3,8 @@ class Place < ApplicationRecord
   has_many :reviews
   #  scope :search, -> (query)
   scope :search_by_city, -> (city_parameter){ where("city like ?", "%#{city_parameter}%")}
+  max_paginates_per 25
+  paginates_per 25
 
 
   #  scope :search, -> (city){ where('city like ?', '%#{city}%')}

@@ -5,7 +5,7 @@ class V1::PlacesController < ApplicationController
     @places = Place.all
     city = params[:city]
     @places = Place.search_by_city(city)
-    json_response(@places)
+    json_response( @places.page(params[:page]))
   end
 
   def show

@@ -15,6 +15,7 @@ gem 'puma', '~> 3.7'
 gem 'faker'
 gem 'factory_girl_rails'
 gem "paperclip", git: "git://github.com/thoughtbot/paperclip.git"
+gem 'kaminari'
 # gem 'doorkeeper'
 # gem 'devise'
 
