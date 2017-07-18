@@ -66,7 +66,7 @@ GEM
     factory_girl_rails (4.8.0)
       factory_girl (~> 4.8.0)
       railties (>= 3.0.0)
-    faker (1.8.3)
+    faker (1.8.4)
       i18n (~> 0.5)
     ffi (1.9.18)
     globalid (0.4.0)
@@ -114,6 +114,9 @@ GEM
     rack (2.0.3)
     rack-test (0.6.3)
       rack (>= 1.0)
+    rack-throttle (0.5.0)
+      bundler (>= 1.0.0)
+      rack (>= 1.0.0)
     rails (5.1.2)
       actioncable (= 5.1.2)
       actionmailer (= 5.1.2)
@@ -196,6 +199,7 @@ DEPENDENCIES
   pg (~> 0.18)
   pry
   puma (~> 3.7)
+  rack-throttle (~> 0.5.0)
   rails (~> 5.1.2)
   rspec-rails
   shoulda-matchers
