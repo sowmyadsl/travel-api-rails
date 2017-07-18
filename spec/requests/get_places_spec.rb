@@ -12,4 +12,6 @@ describe 'get place route', :type => :request do
   it 'returns status code 200' do
     expect(response).to have_http_status(:success)
   end
+
+
 end
