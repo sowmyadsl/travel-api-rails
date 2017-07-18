@@ -18,7 +18,8 @@ gem "paperclip", git: "git://github.com/thoughtbot/paperclip.git"
 gem 'kaminari'
 gem 'rack-throttle', '~> 0.5.0'
 # gem 'doorkeeper'
-# gem 'devise'
+gem 'devise'
+gem 'jwt'
 
 
 # Build JSON APIs with ease. Read more: https://github.com/rails/jbuilder

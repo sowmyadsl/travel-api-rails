@@ -1,5 +1,5 @@
 class V1::PlacesController < ApplicationController
-  # before_action :doorkeeper_authorize!
+  before_action :authenticate_request!
 
   def index
     @places = Place.all
