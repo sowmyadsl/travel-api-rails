@@ -20,6 +20,8 @@ gem 'rack-throttle', '~> 0.5.0'
 # gem 'doorkeeper'
 gem 'devise'
 gem 'jwt'
+gem "active_model_serializers"
+
 
 
 # Build JSON APIs with ease. Read more: https://github.com/rails/jbuilder
