@@ -7,15 +7,15 @@
 #   Character.create(name: 'Luke', movie: movies.first)
 
 Place.destroy_all
+Review.destroy_all
 
 
-
-  20.times do |index|
+  200.times do |index|
   new_place = Place.create!(city: Faker::Address.city,
                             country: Faker::Address.country,
                             image_file_name: Faker::Avatar.image
                             )
-    5.times do
+    50.times do
       new_place.reviews.create!(author: Faker::Friends.character,
                                 content: Faker::Lorem.characters(100)
                                 )

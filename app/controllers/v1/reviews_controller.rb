@@ -1,4 +1,4 @@
-class ReviewsController < ApplicationController
+class V1::ReviewsController < ApplicationController
 
   def index
     @place = Place.find(params[:place_id])

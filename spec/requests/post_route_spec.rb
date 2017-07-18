@@ -3,7 +3,7 @@ require 'rails_helper'
 describe "post a place route", :type => :request do
 
   before do
-    post '/places', params: { :city => 'test_city', :country => 'test_country' }
+    post '/v1/places', params: { :city => 'test_city', :country => 'test_country' }
   end
 
   it 'returns the city' do

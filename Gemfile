@@ -15,6 +15,8 @@ gem 'puma', '~> 3.7'
 gem 'faker'
 gem 'factory_girl_rails'
 gem "paperclip", git: "git://github.com/thoughtbot/paperclip.git"
+# gem 'doorkeeper'
+# gem 'devise'
 
 
 # Build JSON APIs with ease. Read more: https://github.com/rails/jbuilder

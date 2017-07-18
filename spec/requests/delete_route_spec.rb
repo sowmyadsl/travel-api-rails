@@ -6,7 +6,7 @@ describe "delete a place route", :type => :request do
     @place1 = FactoryGirl.create(:place)
     @place2 = FactoryGirl.create(:place)
 
-    delete "/places/#{@place1.id}"
+    delete "/v1/places/#{@place1.id}"
 
   end
 

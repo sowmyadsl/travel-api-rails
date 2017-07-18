@@ -1,4 +1,6 @@
-class PlacesController < ApplicationController
+class V1::PlacesController < ApplicationController
+  # before_action :doorkeeper_authorize!
+
   def index
     @places = Place.all
     city = params[:city]
