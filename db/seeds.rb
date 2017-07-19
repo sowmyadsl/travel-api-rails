@@ -15,7 +15,7 @@ Review.destroy_all
                             country: Faker::Address.country,
                             image_file_name: Faker::Avatar.image
                             )
-    50.times do
+    25.times do
       new_place.reviews.create!(author: Faker::Friends.character,
                                 content: Faker::Lorem.characters(100)
                                 )

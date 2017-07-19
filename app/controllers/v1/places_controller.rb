@@ -2,10 +2,11 @@ class V1::PlacesController < ApplicationController
   # before_action :authenticate_request!
 
   def index
-    @places = Place.all
+    # @places = Place.all
     city = params[:city]
-    @places = Place.search_by_city(city)
-    json_response( @places.page(params[:page]))
+    @places = Place.all.as_json(include:[:reviews], root: true)
+    json_response(@places)
+    # json_response( @places.page(params[:page]))
   end
 
   def show

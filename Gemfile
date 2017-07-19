@@ -16,6 +16,7 @@ gem 'faker'
 gem 'factory_girl_rails'
 gem "paperclip", git: "git://github.com/thoughtbot/paperclip.git"
 gem 'kaminari'
+gem 'kaminari-activerecord'
 gem 'rack-throttle', '~> 0.5.0'
 # gem 'doorkeeper'
 gem 'devise'

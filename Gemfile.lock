@@ -218,6 +218,7 @@ DEPENDENCIES
   faker
   jwt
   kaminari
+  kaminari-activerecord
   launchy
   listen (>= 3.0.5, < 3.2)
   paperclip!
